@@ -1,38 +1,125 @@
 .App {
-  text-align: center;
+  padding: 110px;
+  background-image: url('https://th.bing.com/th/id/R.f8c6fbbe3099df59d52ab4c4d18d4d37?rik=5EC2uepoUXfs3w&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f0%2fa%2f9%2f568837.jpg&ehk=LC5WElSERjgnvHjamGNPRFl71QeDoXfKQ%2fhSb6l3XQk%3d&risl=&pid=ImgRaw&r=0');
+  background-size:cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.main-div{
+  background-image: url('https://th.bing.com/th/id/R.f8c6fbbe3099df59d52ab4c4d18d4d37?rik=5EC2uepoUXfs3w&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f0%2fa%2f9%2f568837.jpg&ehk=LC5WElSERjgnvHjamGNPRFl71QeDoXfKQ%2fhSb6l3XQk%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  width: 370px;
+  height: 500px;
+  margin:20px auto;
+  border-radius:10px;
+  padding: 40px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-div .weather-head{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-left: 50px;
+}
+
+.weather-head h1
+{
+  color: white;
+  margin-left: 20px;
+  
+}
+.weather-head img{
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.input
+{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+::placeholder
+{
   color: white;
 }
+.input .textfield
+{
+  color: white;
+  background-color: white;
+  border-radius: 20px;
+}
+button{
+  margin-left: 150px;
+  margin-top: 20px;
+  padding: 5px;
+  width: 20%;
+  border-radius: 20px;
+box-shadow: 0px 0px 10px 5px white;
+background-color: transparent;
+color: white;
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.weather-details
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
 }
+.weather-details h3
+{
+  color: white;
+  font-size: 70px;
+  margin: 0px;
+  padding: 0px;
+}
+.weather-details h4
+{
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+.main-details
+{
+  margin-top: 40px;
+}
+
+.sub-details
+{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+}
+.sub-details .c-image
+{
+  position: absolute;
+}
+
+
+
+.sub-details h4{
+  position: absolute;
+  top: 113px;
+  right: 99px;
+  animation: blink 4s  infinite;
+  width: 40px;
+  
+  animation: blink2 3s  infinite;
+}
+
+.display h3
+{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-weight: 300;
+  word-spacing: 10px;
+}
+
+
